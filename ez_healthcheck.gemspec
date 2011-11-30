@@ -20,10 +20,12 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "ez_healthcheck.gemspec",
     "lib/ez_healthcheck.rb",
     "spec/ez_healthcheck_spec.rb",
     "spec/spec_helper.rb"

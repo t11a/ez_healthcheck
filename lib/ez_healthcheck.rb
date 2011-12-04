@@ -20,17 +20,17 @@ class EzHealthcheck
       response = Net::HTTP.get_response(@host,path)
       case response
       when Net::HTTPInformation
-        puts "1xx"
+        #puts "1xx"
       when Net::HTTPSuccess
-        puts "2xx"
+        #puts "2xx"
       when Net::HTTPRedirection
-        puts "3xx"
+        #puts "3xx"
       when Net::HTTPClientError
-        puts "4xx"
+        #puts "4xx"
       when Net::HTTPServerError
-        puts "5xx"
+        #puts "5xx"
       else
-        puts "unknown"
+        #puts "unknown"
       end
       @codes.store(path, response.code)
     end

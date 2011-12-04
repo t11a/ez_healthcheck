@@ -6,23 +6,23 @@ Description goes here.
 * AWS account
 
 == Sample
-require 'rubygems'
-require 'ez_healthcheck'
+  require 'rubygems'
+  require 'ez_healthcheck'
 
-HOST= 'example.com'
-ID  = 'XXXX'
-KEY = 'YYYY'
+  HOST= 'example.com'
+  ID  = 'XXXX'
+  KEY = 'YYYY'
 
-ez = EzHealthcheck.new(HOST, ID, KEY)
+  ez = EzHealthcheck.new(HOST, ID, KEY)
 
-ez.access(['/']) # access to root path
+  ez.access(['/']) # access to root path
 
-params.store(:subject, 'test')
-params.store(:from, 'from@example.com')
-params.store(:to, 'to@example.com')
-params.store(:body_text, 'test')
-params.store(:body_html, '<h1>test</h1>')
-ez.send_email(params)
+  params.store(:subject, 'test')
+  params.store(:from, 'from@example.com')
+  params.store(:to, 'to@example.com')
+  params.store(:body_text, 'test')
+  params.store(:body_html, '<h1>test</h1>')
+  ez.send_email(params)
 
 == Contributing to ez_healthcheck
  

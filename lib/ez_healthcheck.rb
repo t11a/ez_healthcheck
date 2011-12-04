@@ -16,7 +16,7 @@ class EzHealthcheck
 
   def access(paths=[])
     paths.each do |path|
-      puts path
+      #puts path
       response = Net::HTTP.get_response(@host,path)
       case response
       when Net::HTTPInformation
